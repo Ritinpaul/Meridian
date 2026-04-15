@@ -22,3 +22,22 @@ export type PositionUpdateMessage = {
   speed: number | null;
   heading: number | null;
 };
+
+export type AnomalyAlert = {
+  anomaly_id: string;
+  entity_id: string;
+  external_id?: string;
+  anomaly_type: "route_deviation" | "speed_spike" | "heading_flip" | "stale_signal" | string;
+  anomaly_score: number;
+  reason: string;
+  detected_at: string;
+};
+
+export type NLQueryResult = {
+  question: string;
+  sql_generated: string;
+  execution_ms: number;
+  summary: string;
+  row_count: number;
+  rows: Record<string, any>[];
+};

@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-08-01T16:18:33.401310",
+  "batch_size": 5000,
+  "ingest_throughput_msgs_per_sec": 24272.66,
+  "ingest_total_seconds": 0.206,
+  "anomaly_detection_latency_ms": 2731.93,
+  "nl_query_translation_latency_ms": 7.76,
+  "performance_targets_met": {
+    "throughput_high": true,
+    "anomaly_latency_fast": false,
+    "nl_query_latency_fast": true
+  }
+}
